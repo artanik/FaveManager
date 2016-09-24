@@ -13,5 +13,5 @@ npm run start #start electron
 
 **Tests**
 ```bash
-npm test #run tests
+npm run test #run tests
 ```
