@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 import { ADD_TODO, TOGGLE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from '../actions';
+import INITIAL_STATE from '../constants/InitialState';
 
 const { SHOW_ALL } = VisibilityFilters;
 
@@ -12,7 +13,7 @@ function visibilityFilter(state = SHOW_ALL, action) {
   }
 }
 
-function todos(state = [], action) {
+function todos(state = INITIAL_STATE, action) {
   switch (action.type) {
     case ADD_TODO:
       return [
