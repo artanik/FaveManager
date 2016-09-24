@@ -1,5 +1,22 @@
 const INITIAL_STATE = {
-  visibilityFilter: 'SHOW_ALL',
-  todos: []
+  data: {
+    photos: [],
+    videos: [],
+    posts: [],
+    MarketItems: []
+  },
+  reverse: false,
+  aciveState: 'POSTS',
+  states: {
+    STACK: {},
+    DATE: {
+      beginDate: '',
+      endDate: ''
+    },
+    SEARCH: {},
+    POSTS: {},
+    MEDIA: {},
+    RESOURCES: {},
+  }
 };
 export default INITIAL_STATE;
