@@ -2,9 +2,11 @@
 
 electron, es2015, webpack, babel, react, redux, postcss, cssnext
 
+## How to setup
 ```bash
 npm install -S # install dependencies
-npm install -D # or install devDependencies for developing
-npm run start #start electron
+# or
+npm install -D # install devDependencies for developing
 npm run build #build react app
+npm run start #start electron
 ```
