@@ -1,0 +1,20 @@
+{
+  parser: "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "max-len": [1, 120, 2, {ignoreComments: true}],
+    "jsx-quotes": [2, "prefer-double"],
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/jsx-filename-extension": "off",
+    "react/no-unused-prop-types": "off",
+    "react/require-extension": "off",
+    "no-useless-constructor": "off",
+    "arrow-body-style": "off",
+    "comma-dangle": "off",
+    "semi": "off"
+  }
+}

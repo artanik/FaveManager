@@ -1,0 +1,27 @@
+:root {
+  --color: #eee;
+}
+
+body {
+  background: var(--color);
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+}
+
+.todo-list {
+  padding: 0 1em;
+}
+
+.todo-list li {
+  cursor: pointer;
+}
+
+.todo-list .completed {
+  text-decoration: line-through;
+}
