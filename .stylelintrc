@@ -1,9 +1,9 @@
 {
-    "rules": {
-        "color-hex-case": "lower",
-        "color-hex-length": "short",
-        "declaration-no-important": true,
-        "indentation": 2,
-        "selector-no-id": true
-    }
+  "rules": {
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "declaration-no-important": true,
+    "indentation": 2,
+    "selector-no-id": true
+  }
 }
