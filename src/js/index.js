@@ -7,6 +7,7 @@ import thunk from 'redux-thunk';
 import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 
+import dbWorker from './utils/dbWorker.js';
 import todoApp from './reducers';
 import App from './components/App';
 
@@ -18,9 +19,10 @@ const store = createStore(
   applyMiddleware(thunk, promise, logger)
 );
 
+const Login = <div>login</div>;
+const MainApp = <Provider store={store}><App /></Provider>;
+
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  dbWorker.checkData() ? MainApp : Login,
   document.getElementById('root')
 );

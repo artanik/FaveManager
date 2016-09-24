@@ -1,4 +1,5 @@
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, ipcMain} = require('electron');
+const dbWorker = require('./dbWorker');
 
 let win;
 
