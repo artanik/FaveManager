@@ -29,3 +29,4 @@ build/Release
 node_modules
 
 app/bundle.*
+src/js/__tests__/__snapshots__
