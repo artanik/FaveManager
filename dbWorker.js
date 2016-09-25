@@ -7,12 +7,11 @@ const pathPosts = path + 'posts.json';
 const pathPhotos = path + 'photos.json';
 const pathVideos = path + 'videos.json';
 
-const dbPosts = low(pathPosts);
-
 if (!fs.existsSync(path)){
   fs.mkdirSync(path);
 }
 
 ipcMain.on('checkData', (event) => {
+  const dbPosts = low(pathPosts);
   event.returnValue = !_.isEmpty(dbPosts.getState())
 });
